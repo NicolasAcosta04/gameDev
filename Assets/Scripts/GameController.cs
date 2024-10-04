@@ -62,6 +62,8 @@ public class GameController : MonoBehaviour
             Lines[i].endWidth = 0.1f;
 
             activePickupIndices.Add(i);
+
+            Lines[i].gameObject.SetActive(false);
         }
 
         // Create velocity line
@@ -284,6 +286,11 @@ public class GameController : MonoBehaviour
     {
         velocityLine.gameObject.SetActive(currentDebugMode == DebugMode.Vision);
         debugGUI.gameObject.SetActive(currentDebugMode != DebugMode.Normal);
+        foreach (int i in activePickupIndices)
+        {
+            Lines[i].gameObject.SetActive(currentDebugMode == DebugMode.Distance || currentDebugMode == DebugMode.Vision);
+
+        }
     }
 
     private void UpdateDebugText(Vector3 playerVelocity)
