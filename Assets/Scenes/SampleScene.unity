@@ -375,10 +375,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugGUI: {fileID: 199984307}
+  playerPosText: {fileID: 1513846057}
+  playerVelocityText: {fileID: 1105121195}
   playerPos: {x: 0, y: 0, z: 0}
   PickUps: []
-  normalPickUpColor: {r: 1, g: 1, b: 1, a: 1}
-  closestPickUpColor: {r: 0, g: 0, b: 1, a: 1}
+  currentDebugMode: 0
 --- !u!4 &165148869
 Transform:
   m_ObjectHideFlags: 0
@@ -1251,7 +1252,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 75}
+  m_SizeDelta: {x: 300, y: 75}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1105121195
 MonoBehaviour:
@@ -1619,7 +1620,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1513846057
 MonoBehaviour:
